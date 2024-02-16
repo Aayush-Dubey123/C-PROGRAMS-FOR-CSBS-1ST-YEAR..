@@ -1,0 +1,13 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main()
+{
+float byte,kb,bit,mb;
+printf("enter byte =");
+scanf("%f",&byte);
+bit = byte*8;
+kb = byte/1024;
+mb = kb/1024;
+printf("\nvalues in bits = %.2f\n values in kb = %.2f\n values in mb = %.2f\n ",bit,kb,mb);
+return 0;
+}
