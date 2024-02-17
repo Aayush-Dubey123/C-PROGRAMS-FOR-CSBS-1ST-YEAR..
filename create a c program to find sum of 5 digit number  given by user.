@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() 
+{
+   int d1,d2,d3,d4,d5,sum,num,ori;
+   printf("enter 5 digit number =");
+   scanf("%d",&num);
+   ori=num;
+   d1=num%10;
+   num=num/10;
+    d2=num%10;
+   num=num/10;
+    d3=num%10;
+    num=num/10;
+    d4=num%10;
+    num=num/10;
+    d5=num%10;
+  sum = d1+d2+d3+d4+d5;
+  printf("sum of digit %d is %d",ori,sum);
+}
