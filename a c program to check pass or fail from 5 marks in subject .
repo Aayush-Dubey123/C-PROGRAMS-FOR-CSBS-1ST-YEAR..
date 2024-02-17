@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+   int m1,m2,m3,m4,m5,total,per;
+   printf("enter marks of 5 subject =");
+   scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+   if(m1>=40 && m2>=40 && m3>=40 && m4>=40 && m5>=40)
+    {
+        printf("pass\n");
+        total = m1+m2+m3+m4+m5;
+        per=total/5;
+        printf("total and percentage secured = %d and %d",total,per);
+    }
+    else
+    {
+        printf("fail");
+    }
+   
+    return 0;
+}
