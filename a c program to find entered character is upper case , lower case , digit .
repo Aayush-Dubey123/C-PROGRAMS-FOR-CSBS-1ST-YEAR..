@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void main()
+{
+  char ch ;
+  printf("enter any lower case value =");
+  scanf("%C",&ch);
+  if(ch>=97 && ch<=122)
+  {
+      printf("lower case = %c",ch);
+  }
+  if(ch>=65 && ch<=90)
+  {
+      printf("upper case = %c",ch);
+  }
+  if(ch>=48 && ch<=57)
+  {
+      printf("digits case = %c",ch);
+  }
+}
