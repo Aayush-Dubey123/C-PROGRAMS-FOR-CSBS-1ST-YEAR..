@@ -1,0 +1,60 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int ch,num,i=1 ;
+    printf("1.check for evn or odd\n");
+    printf("2.check for positive ,negative ,zero\n");
+    printf("check for prime or not\n");
+    printf("4.exit\n");
+    printf("enter choice=");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:
+        printf("enter number = ");
+        scanf("%d",&num);
+        if(num%2==0)
+        {
+            printf("even\n");
+        }
+
+        else
+        {
+            printf("odd\n");
+        }
+        break;
+        case 2: 
+        printf("enter number = ");
+        scanf("%d",&num);
+        if(num>0)
+        {
+            printf("number is positive");
+        }
+         if(num<0)
+        {
+            printf("number is negative");
+        }
+         if(num==0)
+        {
+            printf("number is zer0");
+        }
+        break;
+    case 3:
+    printf("enter number");
+    scanf("%d",&num);
+    if(num%i==0 && num!=1)
+    {
+        printf("\n prime number");
+    }
+    else
+    {
+        printf("not prime");
+    }
+    break;
+    case 4: exit (0);
+    default : printf("invalid input");
+    return 0;
+}    
+}
