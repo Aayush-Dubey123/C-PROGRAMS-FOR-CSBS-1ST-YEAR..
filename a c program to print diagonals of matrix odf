@@ -1,0 +1,41 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main()
+{
+    int a[3][3],i,j;
+    printf("enter 3x3 number FOR A=");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+        scanf("%d",&a[i][j]);
+        }
+    }
+    printf("enterd matrix A =\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+        printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+     printf("diagonal  matrix A =\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            if(i==j)
+            {
+        printf("%d ",a[i][j]);
+            }
+            else
+            {
+                 printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
