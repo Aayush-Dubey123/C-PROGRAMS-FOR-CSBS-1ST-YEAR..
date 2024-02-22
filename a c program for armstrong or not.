@@ -1,0 +1,24 @@
+#include <stdio.h> 
+int main ()
+{
+    int num,sum,ori,d; 
+   printf("enter number =");
+   scanf("%d",&num);
+   ori=num;
+   sum=0;
+   while(num>0)
+   {
+       d=num%10;
+       sum=sum+d*d*d;
+       num=num/10;
+   }
+   if(sum==ori)
+   {
+       printf("number is armstrong");
+   }
+   else
+   {
+       printf("number is not armstrong");
+   }
+    return 0;
+}
