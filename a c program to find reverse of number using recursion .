@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int revnum(int n, int rev)
+{
+    if(n>0)
+    {
+        rev = rev*10+n%10;
+        return revnum(n/10,rev);
+    }
+    else
+    {
+        return rev;
+    }
+}
+void main()
+{
+    int n,s;
+    printf("enter number=");
+    scanf("%d",&n);
+      s = revnum(n,0);
+    printf("rev of digits = %d",s);
+}
