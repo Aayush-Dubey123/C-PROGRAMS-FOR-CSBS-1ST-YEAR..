@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct complex 
+{
+    int real,img;
+}A1,A2,A3;
+int main() 
+{
+   printf("\n enter real and imaginary term for complex equation 1 =");
+   scanf("%d%d",&A1.real,&A1.img);
+   printf("\n enter real and imaginary term for complex equation 2 =");
+   scanf("%d%d",&A2.real,&A2.img);
+A3.real = A1.real+A2.real;
+A3.img = A1.img+A2.img;
+if(A3.img>0)
+{
+    printf("%d +i%d ",A3.real,A3.img);
+}
+else
+{
+    printf("%d -i%d ",A3.real,-1*A3.img);
+}
+    return 0;
+}
