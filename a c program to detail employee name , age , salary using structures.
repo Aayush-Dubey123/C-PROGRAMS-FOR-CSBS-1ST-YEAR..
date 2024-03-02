@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct employee
+{
+   char name[10];
+   int age;
+   float sal;
+}A1,A2;
+int main() 
+{
+   printf("\n enter name,age and salary term for employee 1 =");
+   scanf("%s%d%f",&A1.name,&A1.age,&A1.sal);
+   printf("\n enter name,age and salary term for employee 2 =");
+   scanf("%s%d%f",&A2.name,&A2.age,&A1.sal);
+ printf(" details of employee 1 are =\n");
+ printf("NAME =%s\n",A1.name);
+ printf("age =%d\n",A1.age);
+ printf("salary =%f\n",A1.sal);
+ printf("------------------\n");
+  printf(" details of employee 1 are =\n");
+ printf("NAME =%s\n",A2.name);
+ printf("age =%d\n",A2.age);
+ printf("salary =%f\n",A2.sal);
+    return 0;
+}
