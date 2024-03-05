@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+typedef struct employee
+{
+    char name[10];
+    int eid;
+    float sal ;
+}EMP;
+int main() 
+{
+ EMP E[5];
+printf(" size of E[0].name = %d\n",sizeof(E[0].name));
+ printf(" size of E[0].eid = %d\n",sizeof(E[0].eid));
+ printf(" size of E[0].sal = %d",sizeof(E[0].sal));
+    return 0;
+}
