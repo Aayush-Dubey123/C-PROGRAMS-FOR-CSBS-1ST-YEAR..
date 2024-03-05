@@ -1,0 +1,37 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+typedef struct employee
+{
+    char name[10];
+    int eid;
+    float sal ;
+}EMP;
+void getemployee(struct employee *ptr)
+{
+    printf("\n  enter name = ");
+    scanf("%s",&(ptr->name));
+     printf("\n  enter ID = ");
+    scanf("%d",&(ptr->eid));
+     printf("\n  enter salary = ");
+    scanf("%f",&(ptr->sal));
+}
+void showemployee(struct employee *ptr)
+{
+    printf("\n  entered name = %s ",(ptr->name));
+    printf("\n  entered id = %d ",(ptr->eid));
+    printf("\n  entered salary = %f ",(ptr->sal));
+}
+int main() 
+{
+ EMP E[3];
+ int i;
+ for(i=0;i<3;i++)
+ {
+     getemployee(&E[i]);
+ }
+  for(i=0;i<3;i++)
+ {
+     showemployee(&E[i]);
+ }
+    return 0;
+}
